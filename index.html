@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sabier Richards</title>
+  <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/jquery.fullpage.css" />
+  <!-- This following line is needed in case of using the default easing option or when using another
+   one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
+  <!-- <script src="vendors/jquery.easings.min.js"></script> -->
+
+
+  <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+  <!-- <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
+  <script type="text/javascript">
+  		$(document).ready(() => {
+  			$('#fullpage').fullpage({
+  				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+  				menu: '#menu',
+  				scrollingSpeed: 1000
+  			});
+  		});
+	</script>
+
+</head>
+<body>
+  <div id="fullpage">
+  	<div class="section">
+      	<div class="slide"> Slide 1 </div>
+      	<div class="slide"> Slide 2 </div>
+      	<div class="slide"> Slide 3 </div>
+      	<div class="slide"> Slide 4 </div>
+    </div>
+  	<div class="section">Some section</div>
+  	<div class="section">Some section</div>
+  	<div class="section">Some section</div>
+  </div>
+</body>
+</html>

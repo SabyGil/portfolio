@@ -1,0 +1,253 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(72,156,234,1);
+  color: -moz-linear-gradient(left, rgba(72,156,234,1) 0%, rgba(31,123,229,1) 100%);
+  color: -webkit-gradient(left top, right top, color-stop(0%, rgba(72,156,234,1)), color-stop(100%, rgba(31,123,229,1)));
+  color: -webkit-linear-gradient(left, rgba(72,156,234,1) 0%, rgba(31,123,229,1) 100%);
+}
+
+.wrapper {
+	animation: fadein 1.5s ;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fixed-width {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+#navbar {
+  width: 100%;
+  padding: .5rem 0;
+  top: 0;
+  position: absolute;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a {
+  padding: 0 15px;
+  color: white;
+}
+
+#navbar .logo{
+  margin-right: auto;
+}
+
+#navbar ul li a:hover {
+  color: rgba(72,156,234,1);
+  color: -moz-linear-gradient(left, rgba(72,156,234,1) 0%, rgba(31,123,229,1) 100%);
+  color: -webkit-gradient(left top, right top, color-stop(0%, rgba(72,156,234,1)), color-stop(100%, rgba(31,123,229,1)));
+  color: -webkit-linear-gradient(left, rgba(72,156,234,1) 0%, rgba(31,123,229,1) 100%);
+}
+
+#bg-container {
+  background: url(http://best-ankara.org/wp-content/uploads/yazilim-slider-3.jpg) top center no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#bg-container .black-screen {
+  background: rgba(39,62,84,0.82);
+  display: grid;
+  height: 100%;
+}
+
+#bg-container .black-screen .jumbotron {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#bg-container .black-screen .jumbotron .main-left  {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#bg-container .black-screen .jumbotron .main-left img {
+  height: 500px;
+  border: 2px solid silver;
+}
+
+#bg-container .black-screen .jumbotron .main-right {
+  color: white;
+  line-height: 200%;
+  padding: 2rem;
+}
+
+#bg-container .black-screen .jumbotron .main-right p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-indent: 1rem;
+  text-align: center;
+}
+
+/* Bio-section  */
+
+#bio .fixed-width .mid-section h2, .skills_list, button{
+
+}
+
+#bio .fixed-width .mid-section {
+  margin: 30px 0;
+}
+
+#bio .fixed-width .mid-section h1 {
+  font-size: 32px;
+}
+
+#bio .fixed-width .mid-section p {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+#bio .fixed-width .mid-section h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+#bio .fixed-width .mid-section ul {
+  margin-top: 30px;
+  font-size: 18px;
+  display: inline-block;
+  list-style-type: disc;
+	margin-right: 40px;
+}
+
+#bio .fixed-width .mid-section button {
+  display: block;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: orange;
+}
+
+#bio .fixed-width .mid-section button a {
+  color: white;
+}
+
+/* /Bio-section  */
+
+/*  portfolio */
+
+#portfolio-area {
+  /* border: 5px solid cyan; */
+}
+
+#portfolio-area .work-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-gap: 3rem;
+}
+
+#portfolio-area .work-container .hoverBox.proj1{
+	background: url("images/projpic.png") no-repeat center;
+	background-size: cover;
+}
+
+#portfolio-area .work-container .hoverBox.proj2{
+	background: url("http://i.imgur.com/nTZZ3ik.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#portfolio-area .work-container .hoverBox.proj3{
+	background: url("http://i.imgur.com/GQ3O5uE.png") no-repeat center;
+	background-size: cover;
+}
+
+#portfolio-area .work-container .hoverBox.proj4{
+  background: url("http://i.imgur.com/shRa50Z.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#portfolio-area .work-container .hoverBox.proj5{
+ 	background: url("http://i.imgur.com/W9KJsKW.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#portfolio-area .work-container .hoverBox.proj6{
+	background: url("http://cucsa.org.uk/wp-content/uploads/2015/10/Work_In_Progress.png") no-repeat center;
+	background-size: cover;
+}
+
+#portfolio-area .work-container .hoverBox a {
+  display: block;
+  text-align: center;
+  height: 100%;
+  text-decoration: none;
+}
+
+#portfolio-area .work-container .hoverBox .overlay {
+	background-color: rgba(48, 57, 92, .9);
+	position: relative;
+	/* left: -100%; */
+	height: 100%;
+	transition: all 1s ease;
+	opacity: 0;
+  visibility: hidden;
+  border: 5px solid goldenrod;
+}
+
+#portfolio-area .work-container .hoverBox:hover .overlay {
+  visibility: visible;
+	opacity: 1;
+	left: 0;
+}
+
+#portfolio-area .work-container .overlay .text {
+	font-size: 20px;
+}
+
+#portfolio-area .work-container .overlay .text h3 {
+  color: #fff;
+  padding: 120px 0px 0 0;
+  margin: 0;
+}
+
+/*  /portfolio */
+
+/* contact */
+#contact-bg {
+	background: url("images/code1.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+#contact-bg .contact-info {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70rem;
+  height: 40vh;
+  background-color: rgba(0,0,0, .5);
+}
+
+#contact-bg .contact-info > * {
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}

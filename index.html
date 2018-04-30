@@ -5,39 +5,189 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sabier Richards</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./node_modules/fullpage.js/dist/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
   <!-- This following line is needed in case of using the default easing option or when using another
    one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
   <!-- <script src="vendors/jquery.easings.min.js"></script> -->
-
-
   <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
   <!-- <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script> -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="./node_modules/fullpage.js/dist/jquery.fullpage.js"></script>
+  <script type="text/javascript" src="./node_modules/fullpage.js/vendors/scrolloverflow.min.js"></script>
   <script type="text/javascript">
-  		$(document).ready(() => {
-  			$('#fullpage').fullpage({
-  				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-  				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-  				menu: '#menu',
-  				scrollingSpeed: 1000
-  			});
-  		});
-	</script>
-
+    $(document).ready(() => {
+      $('#fullpage').fullpage({
+        // sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        // anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        // menu: '#menu',
+        scrollingSpeed: 850,
+        scrollOverflow: true,
+      });
+    });
+  </script>
 </head>
 <body>
-  <div id="fullpage">
-  	<div class="section">
-      	<div class="slide"> Slide 1 </div>
-      	<div class="slide"> Slide 2 </div>
-      	<div class="slide"> Slide 3 </div>
-      	<div class="slide"> Slide 4 </div>
+  <div id='navbar'>
+    <ul class='fixed-width'>
+      <li class="logo">
+        <a href="#index" class='logo'>Sabier Richards</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <!--  -->
+  <div id="fullpage" class='wrapper'>
+    <div class="section" data-anchor='index'>
+      <div id="bg-container">
+        <div class="black-screen">
+          <section class="jumbotron fixed-width">
+            <div class="main-left">
+              <img src="images/pic1.jpg" alt="">
+              <!-- <img src="images/ebay-pic.jpg" alt=""> -->
+            </div>
+            <div class="main-right">
+              <!-- <h1>Sabier Richards</h1> -->
+              <p> Front-end web-developer specializing in creating user interfaces with React.Js. I am also familiar with UI/UX design best practices which allow me to build user-friendly experiences. My aim is to help people create a unique online presence
+                that caters to their needs and cultivates their brand.
+              </p>
+              <div class='btns'>
+                <!-- <button>
+              <a href="#">My Work</a>
+            </button>
+            <button>
+              <a href="#">BUTTON Tw</a>
+            </button> -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
-  	<div class="section">Some section</div>
-  	<div class="section">Some section</div>
-  	<div class="section">Some section</div>
+  <!--  -->
+    <div class="section" data-anchor='about'>
+      <section id="bio">
+        <div class="fixed-width">
+          <div class="mid-section">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am a web-developer who specializes in creating user interfaces with React. I also help people create a unique online presence that caters to their needs and cultivates their brand. I believe one of my strengths
+              is my background in UI/UX design as it has given me insight on what designs are most user-friendly and which need improvement. Besides the fact that I enjoy design and development, I chose this industry because It is apparent to me that
+              the future is in technology; thus, my long term goal is to learn a variety of tech related skills that will allow me flexibility in the types of jobs I can obtain. For the next two years, my focus will be gain enough experience to transition
+              into full stack development. </p>
+            <h2>Skills</h2>
+            <ul class="skills_list">
+              <li>Front-End Development</li>
+              <li>HTML, CSS, JavaScript, React, Jquery</li>
+              <li>Strategy & Planning</li>
+              <li>Wireframing (Axure, Photoshop)</li>
+            </ul>
+            <ul class="skills_list">
+              <li>Problem Solving</li>
+              <li>Research & Analytics</li>
+              <li>Agile methodology</li>
+              <li>JIRA, Slack, Git</li>
+            </ul>
+            <button><a href="https://www.linkedin.com/in/sabier-richards-10833411b/" target='_blank'>VIEW MY LINKEDIN PROFILE</a></button>
+          </div>
+        </div>
+      </section>
+    </div>
+  <!--  -->
+    <div class="section" id="section1" data-anchor='portfolio'>
+      <h1>My Work</h1>
+      <div class="slide">
+        <section id="portfolio-area" class='fixed-width'>
+          <div class="work-container">
+            <div class="hoverBox proj1">
+              <a href="https://react-real-estate-ff31e.firebaseapp.com/#/">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Project 1<br>(React Project)</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hoverBox proj2">
+              <a href="https://preview.c9users.io/saby2109/firstproj/snowMt/snowMt.html">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Project 2</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hoverBox proj3">
+              <a href="https://preview.c9users.io/saby2109/firstproj/socialNet/socialNet.html">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Project 3</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- -->
+            <div class="hoverBox proj4">
+              <a href="https://preview.c9users.io/saby2109/firstproj/backPacker/backPacker.html">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Project 4</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hoverBox proj5">
+              <a href="https://preview.c9users.io/saby2109/firstproj/joeProject/beginner-project/joe1.html">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Project 5</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="hoverBox proj6">
+              <a href="#">
+                <div class="overlay">
+                  <div class="text">
+                    <h3>Project 6</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="slide" data-anchor='slide3-1'></div>
+      <div class="slide"> Slide 3 </div>
+      <div class="slide"> Slide 4 </div>
+    </div>
+  <!--  -->
+    <div class="section" id='contact-bg' data-anchor='contact'>
+      <section class='contact-info'>
+        <div>
+          CONTACT ME!
+        </div>
+        <!-- linkedIn, Email -->
+        <div class='in-icon'>
+          <a href="https://www.linkedin.com/in/sabier-richards-10833411b/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <!-- <br> -->
+        <div class='email-icon'>
+          <i class="far fa-envelope"></i>
+        </div>
+        <span>Richards2109@gmail.com</span>
+      </section>
+    </div>
+  <!--  -->
   </div>
 </body>
+
 </html>
